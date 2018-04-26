@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="CSS/css-trangchu.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div id="head">
+    	<div>
+    	<img src="IMG/logo.ico" width="100" height="100" align="left">
+    	</div>
+    <nav>
+            <a href="trangchu.html">Trang chủ</a> &nbsp; &nbsp; &nbsp; 
+            <a href="gioithieu.html">Giới thiệu</a> &nbsp; &nbsp; &nbsp; 
+            <a href="sanpham.html">Sản phẩm và dịch vụ</a> &nbsp; &nbsp; &nbsp;
+            <a href="tintuc.html">Tin tức</a> &nbsp; &nbsp; &nbsp; 
+            <a href="lienhe.html">Liên Hệ</a> &nbsp; &nbsp; &nbsp; 
+    </nav>
+    </div>
+    
+    <div id="content">
+	<div class="w3-container">
+</div>
+
+<div class="w3-content w3-display-container">
+<div align="center">
+<div class="w3-display-container mySlides">
+  <img src="IMG/tc1.jpg" style="width:80%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="IMG/cy2.jpg" style="width:80%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="IMG/tc3.jpg" style="width:80%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+  </div>
+</div>
+</div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<br />
+    </div>
+    
+    <script src="https://uhchat.net/code.php?f=511a08"></script>
+    
+    <div id="footer">
+    <h5>Số 3 Phố Huế, Hai Bà Trưng, Hà Nội - Hotline:0964.31.3355</h5>
+    <h5>Email:info@litiflorist.com</h5>
+    <h5>Cung cấp bởi Bizweb.</h5>
+  	</div>
+</body>
+</html>
